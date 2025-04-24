@@ -15,6 +15,12 @@ public class StringBufferTest1 {
         buffer1.append("22222");
         System.out.println("수정 후 : " + System.identityHashCode(buffer1));
 
+        // hashcode 해당 객체의 유일성을 보장하는 정수 값
+        // API 8 버전에서는 buffer1.toString(); 해야 값을 확인 가능
+        System.out.println(buffer1);
+
+        // StringBuffer 데이터 타입을 String 으로 형변환 하려면 .toString()을 호출 하면 됨
+        String result = buffer1.toString();
 
 
     }
