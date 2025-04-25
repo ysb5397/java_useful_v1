@@ -3,7 +3,7 @@ package inner;
 public class OuterClass {
     private int num = 10;
 
-    // inner class란? 클래스 내부에 클래스가 있는 것
+    // inner Class란? 클래스 내부에 클래스가 있는 것
     // 멤버 내부 클래스
     class InnerClass {
         public void display() {
