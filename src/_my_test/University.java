@@ -30,6 +30,7 @@ public class University {
         for (int i = 0; i < departments.length; i++) {
             if (departments[i].getName() != null) {
                 System.out.println("학과" + (i + 1) + " : " + departments[i].getName());
+                break;
             } else {
                 continue;
             }
