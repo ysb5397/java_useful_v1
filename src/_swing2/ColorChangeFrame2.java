@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Random;
 
 public class ColorChangeFrame2 extends JFrame implements ActionListener {
 
@@ -22,9 +23,10 @@ public class ColorChangeFrame2 extends JFrame implements ActionListener {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         panel = new JPanel();
-        button1 = new JButton("click1");
-        button2 = new JButton("click2");
+        button1 = new JButton("버튼1");
+        button2 = new JButton("버튼2");
     }
+
     private void setInitLayout() {
         setLayout(new BorderLayout());
 
@@ -34,20 +36,31 @@ public class ColorChangeFrame2 extends JFrame implements ActionListener {
         add(button2, BorderLayout.SOUTH);
 
         setVisible(true);
-
     }
+
     private void addEventListener() {
-
-    }
-
-    // 테스트 코드
-    public static void main(String[] args) {
-
+        button1.addActionListener(this);
+        button2.addActionListener(this);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        System.out.println(e.getSource());
+        // 다운 캐스팅
+        JButton selectedButton = (JButton)e.getSource();
+        System.out.println(selectedButton);
+        System.out.println(selectedButton.getText());
 
+        if (selectedButton == button1) {
+            panel.setBackground(Color.CYAN);
+        } else if (selectedButton == button2) {
+            panel.setBackground((Color.black));
+        }
+    }
+
+    // 테스트 코드
+    public static void main(String[] args) {
+        new ColorChangeFrame2();
     }
 }
 
