@@ -30,8 +30,17 @@ public class FunctionTest extends JFrame {
 
         @Override
         public void paint(Graphics g) {
-            for (int i = 0; i < getWidth(); i++)
-                g.drawLine((i * i), (10 * i), (i * i), (10 * i));
+            int xRan = 0;
+            int yRan = 0;
+            int widRan = 0;
+            int heiRan = 0;
+            for (int i = 0; i < 200; i++) {
+                yRan = random.nextInt(800);
+                xRan = random.nextInt(800);
+                widRan = random.nextInt(200);
+                heiRan = random.nextInt(200);
+                g.drawRect(xRan, yRan, widRan, heiRan);
+            }
         }
     }
 
