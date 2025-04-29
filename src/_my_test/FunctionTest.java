@@ -35,11 +35,11 @@ public class FunctionTest extends JFrame {
             int yRan = 0;
             int widRan = 0;
             int heiRan = 0;
-            for (int i = 0; i < 200; i++) {
+            for (int i = 0; i < 400; i++) {
                 yRan = random.nextInt(800);
                 xRan = random.nextInt(800);
-                widRan = random.nextInt(200);
-                heiRan = random.nextInt(200);
+                widRan = random.nextInt(100);
+                heiRan = random.nextInt(100);
                 g.drawRect(xRan, yRan, widRan, heiRan);
             }
         }

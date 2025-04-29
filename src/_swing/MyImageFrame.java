@@ -10,15 +10,16 @@ public class MyImageFrame extends JFrame {
     public MyImageFrame() {
         initData();
         setInitLayout();
+        setVisible(true);
+        repaint();
     }
 
     private void initData() {
         setTitle("이미지 넣어보는 연습");
         setSize(600,600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setVisible(true);
-
         myImagePanel = new MyImagePanel();
+
     }
 
     private void setInitLayout() {

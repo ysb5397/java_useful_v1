@@ -20,19 +20,20 @@ public class MyComponents extends JFrame {
 
         initData();
         setInitLayout();
+
     }
 
     private void initData() {
         setTitle("컴포넌트 확인");
         setSize(800, 800);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setVisible(true);
 
         button = new JButton("JButton");
         label = new JLabel("글자를 띄우는 컴포넌트");
         textField = new JTextField("아이디 입력하세요.", 30);
         passwordField = new JPasswordField("비밀번호를 입력하세요.", 40);
         checkBox = new JCheckBox("동의");
+
 
     }
 
@@ -46,6 +47,8 @@ public class MyComponents extends JFrame {
         add(textField);
         add(passwordField);
         add(checkBox);
+
+        setVisible(true);
     }
 
     // 테스트 코드

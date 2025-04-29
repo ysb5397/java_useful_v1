@@ -25,7 +25,6 @@ public class MyPanelEx1 extends JFrame {
         setTitle("패널 나누기");
         setSize(500, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setVisible(true);
 
         panel1 = new JPanel();
         panel2 = new JPanel();
@@ -36,6 +35,7 @@ public class MyPanelEx1 extends JFrame {
         button2 = new JButton("button2");
         button3 = new JButton("button3");
         button4 = new JButton("button4");
+        setVisible(true);
     }
 
     private void setInitLayout() {
