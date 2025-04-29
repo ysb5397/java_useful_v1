@@ -26,6 +26,8 @@ public class FunctionTest extends JFrame {
     }
 
     static class drawPaint extends JPanel {
+        private Random random = new Random();
+
         @Override
         public void paint(Graphics g) {
             for (int i = 0; i < getWidth(); i++)
