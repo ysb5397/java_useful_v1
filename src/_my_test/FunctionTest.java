@@ -2,6 +2,7 @@ package _my_test;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Random;
 
 public class FunctionTest extends JFrame {
 
