@@ -4,7 +4,7 @@ public class ArrayExceptionHandling {
 
     public static void main(String[] args) {
         // 배열 - 5
-        // 인덱스의 길이 - 4
+        // 인덱스의 길이 - 4(배열 - 1)
         int[] arr = {1,2,3,4,5};
 
         // 예외처리 try-catch 구문의 이해
